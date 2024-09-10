@@ -10,6 +10,12 @@ let eight;
 let nine;
 let zero;
 
+document.getElementById("b2").addEventListener("load", make0); //number 1
+function make0()
+{
+    document.getElementById("b2").innerHTML = "0";
+}
+
 document.getElementById("b15").addEventListener("click", myFunction); //number 1
 document.getElementById("b16").addEventListener("click", myFunction2); //number 2
 document.getElementById("b17").addEventListener("click", myFunction3); //number 3
@@ -24,7 +30,14 @@ document.getElementById("b20").addEventListener("click", myFunction0); //number 
 
 function myFunction()
 {
-    one = document.getElementById("b2").innerHTML = "1";
+    if(document.getElementById("b2").value == "0")
+    {
+        one = document.getElementById("b2").innerHTML = "1";
+    }
+    else{
+        one = document.getElementById("b2").innerHTML += "1";
+    }
+    
 }
 function myFunction2()
 {
