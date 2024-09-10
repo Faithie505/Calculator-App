@@ -1,12 +1,25 @@
+
 #container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100% 200% 200% 200% 200% 200% 200%;
+    grid-template-rows: 30% 50% 30% 30% 30% 30% 30%;
+    
+    padding-left: 10%;
+    padding-right: 10%;
+   /* padding-top: 2%;*/
 }
+
+button{
+    font-size: 150%;
+}
+
 #b1{
     grid-column: span 4;
+    
 }
 #b2{
     grid-column: span 4;
+    text-align: right;
+    font-size: 280%;
 }
 
