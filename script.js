@@ -1,4 +1,5 @@
 //variables:
+let display;
 let one;
 let two;
 let three;
@@ -16,6 +17,7 @@ function make0()
     document.getElementById("b2").innerHTML = "0";
 }
 
+//if a specific number is clicked, it calls out the function
 document.getElementById("b15").addEventListener("click", myFunction); //number 1
 document.getElementById("b16").addEventListener("click", myFunction2); //number 2
 document.getElementById("b17").addEventListener("click", myFunction3); //number 3
@@ -29,49 +31,52 @@ document.getElementById("b20").addEventListener("click", myFunction0); //number 
 
 
 function myFunction()
-{
-    if(document.getElementById("b2").value == "0")
-    {
-        one = document.getElementById("b2").innerHTML = "1";
-    }
-    else{
-        one = document.getElementById("b2").innerHTML += "1";
-    }
-    
+{  
+        display = "1";
+        document.getElementById("b2").innerHTML += display;
 }
 function myFunction2()
 {
-    document.getElementById("b2").innerHTML += "2";
+    display = "2";
+    document.getElementById("b2").innerHTML += display;
 }
 function myFunction3()
 {
-    document.getElementById("b2").innerHTML += "3";
+    display = "3";
+    document.getElementById("b2").innerHTML += display;
 }
 function myFunction4()
 {
-    document.getElementById("b2").innerHTML += "4";
+    display = "4";
+    document.getElementById("b2").innerHTML += display;
 }
 function myFunction5()
 {
-    document.getElementById("b2").innerHTML += "5";
+    display = "5";
+    document.getElementById("b2").innerHTML += display;
 }
 function myFunction6()
 {
-    document.getElementById("b2").innerHTML += "6";
+    display = "6";
+    document.getElementById("b2").innerHTML += display;
 }
 function myFunction7()
 {
-    document.getElementById("b2").innerHTML += "7";
+    display = "7";
+    document.getElementById("b2").innerHTML += display;
 }
 function myFunction8()
 {
-    document.getElementById("b2").innerHTML += "8";
+    display = "8";
+    document.getElementById("b2").innerHTML += display;
 }
 function myFunction9()
 {
-    document.getElementById("b2").innerHTML += "9";
+    display = "9";
+    document.getElementById("b2").innerHTML += display;
 }
 function myFunction0()
 {
-    document.getElementById("b2").innerHTML += "0";
+    display = "0";
+    document.getElementById("b2").innerHTML += display;
 }
