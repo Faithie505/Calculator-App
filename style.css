@@ -2,7 +2,7 @@
 #container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 30% 50% 30% 30% 30% 30% 30%;
+    grid-template-rows: 40% 60% 40% 40% 40% 40% 40%;
     
     padding-left: 10%;
     padding-right: 10%;
@@ -17,8 +17,8 @@ button{
     grid-column: span 4;
     
 }
-#b2{
-    grid-column: span 4;
+#result{
+    grid-column: span 3;
     text-align: right;
     font-size: 280%;
 }
